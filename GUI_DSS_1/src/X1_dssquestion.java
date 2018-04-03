@@ -962,6 +962,8 @@ public class X1_dssquestion extends javax.swing.JFrame {
         dispose();
         X2_dssweakness x = new X2_dssweakness();
         x.setVisible(true);
+        dsshome.result = dsshome.holland.interprete(dsshome.holland.countAns(dsshome.holland.answer));
+        JOptionPane.showMessageDialog ( null, dsshome.result);
     }//GEN-LAST:event_jNext_X1ActionPerformed
 
     private void jContact_X1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jContact_X1ActionPerformed

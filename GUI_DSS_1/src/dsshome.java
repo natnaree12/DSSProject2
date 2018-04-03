@@ -21,6 +21,8 @@ public class dsshome extends javax.swing.JFrame {
     static HollandInterpreter holland = new HollandInterpreter();
     static char result = 'X';
     
+    WeaknessScore score = new WeaknessScore();
+    
     
     public dsshome() {
         initComponents();
