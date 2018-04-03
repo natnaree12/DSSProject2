@@ -47,7 +47,7 @@ public class HollandInterpreter {
         int max = code[0];
         int maxCode = 0;
         char result = 'X';
-        for(int i = 1; i < 48; i++){
+        for(int i = 1; i < 6; i++){
             if(code[i] > max){
                 max = code[i];
                 maxCode = i;

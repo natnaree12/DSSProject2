@@ -54,6 +54,11 @@ public class X2_dssweakness extends javax.swing.JFrame {
         jWeak1.setBackground(new java.awt.Color(255, 255, 255));
         jWeak1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jWeak1.setText("Mathematics");
+        jWeak1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jWeak1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jWeak1);
         jWeak1.setBounds(420, 200, 130, 30);
 
@@ -61,7 +66,7 @@ public class X2_dssweakness extends javax.swing.JFrame {
         jWeak2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jWeak2.setText("English");
         jPanel1.add(jWeak2);
-        jWeak2.setBounds(420, 240, 130, 31);
+        jWeak2.setBounds(420, 240, 130, 27);
 
         jWeak4.setBackground(new java.awt.Color(255, 255, 255));
         jWeak4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -72,7 +77,7 @@ public class X2_dssweakness extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jWeak4);
-        jWeak4.setBounds(420, 360, 130, 31);
+        jWeak4.setBounds(420, 360, 130, 27);
 
         jWeak3.setBackground(new java.awt.Color(255, 255, 255));
         jWeak3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -83,7 +88,7 @@ public class X2_dssweakness extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jWeak3);
-        jWeak3.setBounds(420, 280, 130, 31);
+        jWeak3.setBounds(420, 280, 130, 27);
 
         jWeak5.setBackground(new java.awt.Color(255, 255, 255));
         jWeak5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -94,7 +99,7 @@ public class X2_dssweakness extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jWeak5);
-        jWeak5.setBounds(420, 320, 130, 31);
+        jWeak5.setBounds(420, 320, 130, 27);
 
         jPrevious_X2.setBackground(new java.awt.Color(102, 153, 255));
         jPrevious_X2.setForeground(new java.awt.Color(255, 255, 255));
@@ -105,7 +110,7 @@ public class X2_dssweakness extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jPrevious_X2);
-        jPrevious_X2.setBounds(395, 480, 80, 23);
+        jPrevious_X2.setBounds(395, 480, 80, 29);
 
         jNext_X2.setBackground(new java.awt.Color(102, 153, 255));
         jNext_X2.setForeground(new java.awt.Color(255, 255, 255));
@@ -116,13 +121,13 @@ public class X2_dssweakness extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jNext_X2);
-        jNext_X2.setBounds(490, 480, 80, 23);
+        jNext_X2.setBounds(490, 480, 80, 29);
 
         jContact_X2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jContact_X2.setForeground(new java.awt.Color(255, 153, 0));
         jContact_X2.setText("Contact");
         jPanel1.add(jContact_X2);
-        jContact_X2.setBounds(160, 20, 80, 23);
+        jContact_X2.setBounds(160, 20, 80, 29);
 
         jHome_X1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/house-black-building-shape.png"))); // NOI18N
         jHome_X1.addActionListener(new java.awt.event.ActionListener() {
@@ -131,13 +136,13 @@ public class X2_dssweakness extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jHome_X1);
-        jHome_X1.setBounds(900, 20, 40, 25);
+        jHome_X1.setBounds(900, 20, 40, 28);
 
         jHelp_X2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jHelp_X2.setForeground(new java.awt.Color(255, 153, 0));
         jHelp_X2.setText("Help");
         jPanel1.add(jHelp_X2);
-        jHelp_X2.setBounds(240, 20, 80, 23);
+        jHelp_X2.setBounds(240, 20, 80, 29);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/img_dssweakness1.jpg"))); // NOI18N
         jPanel1.add(jLabel1);
@@ -147,13 +152,13 @@ public class X2_dssweakness extends javax.swing.JFrame {
         jContact_X3.setForeground(new java.awt.Color(255, 153, 0));
         jContact_X3.setText("Contact");
         jPanel1.add(jContact_X3);
-        jContact_X3.setBounds(160, 20, 80, 23);
+        jContact_X3.setBounds(160, 20, 80, 29);
 
         jHelp_X3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jHelp_X3.setForeground(new java.awt.Color(255, 153, 0));
         jHelp_X3.setText("Help");
         jPanel1.add(jHelp_X3);
-        jHelp_X3.setBounds(240, 20, 80, 23);
+        jHelp_X3.setBounds(240, 20, 80, 29);
 
         jPrevious_X3.setBackground(new java.awt.Color(102, 153, 255));
         jPrevious_X3.setForeground(new java.awt.Color(255, 255, 255));
@@ -164,7 +169,7 @@ public class X2_dssweakness extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jPrevious_X3);
-        jPrevious_X3.setBounds(395, 480, 80, 23);
+        jPrevious_X3.setBounds(395, 480, 80, 29);
 
         jNext_X3.setBackground(new java.awt.Color(102, 153, 255));
         jNext_X3.setForeground(new java.awt.Color(255, 255, 255));
@@ -175,7 +180,7 @@ public class X2_dssweakness extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jNext_X3);
-        jNext_X3.setBounds(490, 480, 80, 23);
+        jNext_X3.setBounds(490, 480, 80, 29);
 
         jHome_X2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/house-black-building-shape.png"))); // NOI18N
         jHome_X2.addActionListener(new java.awt.event.ActionListener() {
@@ -184,7 +189,7 @@ public class X2_dssweakness extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jHome_X2);
-        jHome_X2.setBounds(900, 20, 40, 25);
+        jHome_X2.setBounds(900, 20, 40, 28);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -239,6 +244,13 @@ public class X2_dssweakness extends javax.swing.JFrame {
     private void jHome_X2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jHome_X2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jHome_X2ActionPerformed
+
+    private void jWeak1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jWeak1ActionPerformed
+        // TODO add your handling code here:
+        if(jWeak1.isSelected()){
+            WeaknessScore.subjectWeak[0] = 1;
+        }
+    }//GEN-LAST:event_jWeak1ActionPerformed
 
     /**
      * @param args the command line arguments
