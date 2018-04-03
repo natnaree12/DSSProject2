@@ -623,211 +623,345 @@ public class X1_dssquestion extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jQue22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue22ActionPerformed
-        // TODO add your handling code here:
+        if(jQue22.isSelected()){
+        HollandInterpreter.answer[0] = 1;
+        }
+        //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
     }//GEN-LAST:event_jQue22ActionPerformed
 
     private void jQue17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue17ActionPerformed
-        // TODO add your handling code here:
+        if(jQue17.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue17ActionPerformed
 
     private void jQue18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue18ActionPerformed
-        // TODO add your handling code here:
+        if(jQue18.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue18ActionPerformed
 
     private void jQue19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue19ActionPerformed
-        // TODO add your handling code here:
+        if(jQue19.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue19ActionPerformed
 
     private void jQue20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue20ActionPerformed
-        // TODO add your handling code here:
+        if(jQue20.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue20ActionPerformed
 
     private void jQue21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue21ActionPerformed
-        // TODO add your handling code here:
+        if(jQue21.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue21ActionPerformed
 
     private void jQue1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue1ActionPerformed
-        // TODO add your handling code here:
         if(jQue1.isSelected()){
             HollandInterpreter.answer[0] = 1;
-            //JOptionPane.showMessageDialog ( null, "Planting: " + HollandInterpreter.answer[0] );
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
         }
     }//GEN-LAST:event_jQue1ActionPerformed
 
     private void jQue2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue2ActionPerformed
-        // TODO add your handling code here:
         if(jQue2.isSelected()){
-            HollandInterpreter.answer[1] = 1;
-            //JOptionPane.showMessageDialog ( null, "Solving: " + HollandInterpreter.answer[0] );
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
         }
     }//GEN-LAST:event_jQue2ActionPerformed
 
     private void jQue3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue3ActionPerformed
-        // TODO add your handling code here:
+        if(jQue3.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue3ActionPerformed
 
     private void jQue4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue4ActionPerformed
-        // TODO add your handling code here:
+        if(jQue4.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue4ActionPerformed
 
     private void jQue5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue5ActionPerformed
-        // TODO add your handling code here:
+        if(jQue5.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue5ActionPerformed
 
     private void jQue6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue6ActionPerformed
-        // TODO add your handling code here:
+        if(jQue16.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue6ActionPerformed
 
     private void jQue7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue7ActionPerformed
-        // TODO add your handling code here:
+        if(jQue7.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue7ActionPerformed
 
     private void jQue8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue8ActionPerformed
-        // TODO add your handling code here:
+        if(jQue8.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue8ActionPerformed
 
     private void jQue9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue9ActionPerformed
-        // TODO add your handling code here:
+        if(jQue9.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue9ActionPerformed
 
     private void jQue10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue10ActionPerformed
-        // TODO add your handling code here:
+        if(jQue10.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue10ActionPerformed
 
     private void jQue11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue11ActionPerformed
-        // TODO add your handling code here:
+        if(jQue11.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue11ActionPerformed
 
     private void jQue12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue12ActionPerformed
-        // TODO add your handling code here:
+        if(jQue12.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue12ActionPerformed
 
     private void jQue13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue13ActionPerformed
-        // TODO add your handling code here:
+        if(jQue13.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue13ActionPerformed
 
     private void jQue14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue14ActionPerformed
-        // TODO add your handling code here:
+        if(jQue14.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue14ActionPerformed
 
     private void jQue15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue15ActionPerformed
-        // TODO add your handling code here:
+       if(jQue15.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue15ActionPerformed
 
     private void jQue16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue16ActionPerformed
-        // TODO add your handling code here:
+        if(jQue16.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue16ActionPerformed
 
     private void jQue23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue23ActionPerformed
-        // TODO add your handling code here:
+        if(jQue23.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue23ActionPerformed
 
     private void jQue24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue24ActionPerformed
-        // TODO add your handling code here:
+        if(jQue24.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue24ActionPerformed
 
     private void jQue25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue25ActionPerformed
-        // TODO add your handling code here:
+        if(jQue25.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue25ActionPerformed
 
     private void jQue26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue26ActionPerformed
-        // TODO add your handling code here:
+        if(jQue26.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue26ActionPerformed
 
     private void jQue27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue27ActionPerformed
-        // TODO add your handling code here:
+        if(jQue27.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue27ActionPerformed
 
     private void jQue28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue28ActionPerformed
-        // TODO add your handling code here:
+        if(jQue28.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue28ActionPerformed
 
     private void jQue29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue29ActionPerformed
-        // TODO add your handling code here:
+        if(jQue29.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue29ActionPerformed
 
     private void jQue30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue30ActionPerformed
-        // TODO add your handling code here:
+        if(jQue30.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue30ActionPerformed
 
     private void jQue31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue31ActionPerformed
-        // TODO add your handling code here:
+        if(jQue31.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue31ActionPerformed
 
     private void jQue32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue32ActionPerformed
-        // TODO add your handling code here:
+        if(jQue32.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue32ActionPerformed
 
     private void jQue33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue33ActionPerformed
-        // TODO add your handling code here:
+        if(jQue33.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue33ActionPerformed
 
     private void jQue34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue34ActionPerformed
-        // TODO add your handling code here:
+        if(jQue34.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue34ActionPerformed
 
     private void jQue35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue35ActionPerformed
-        // TODO add your handling code here:
+        if(jQue35.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue35ActionPerformed
 
     private void jQue36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue36ActionPerformed
-        // TODO add your handling code here:
+        if(jQue36.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue36ActionPerformed
 
     private void jQue37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue37ActionPerformed
-        // TODO add your handling code here:
+        if(jQue37.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue37ActionPerformed
 
     private void jQue38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue38ActionPerformed
-        // TODO add your handling code here:
+        if(jQue38.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue38ActionPerformed
 
     private void jQue39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue39ActionPerformed
-        // TODO add your handling code here:
+        if(jQue39.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue39ActionPerformed
 
     private void jQue40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue40ActionPerformed
-        // TODO add your handling code here:
+        if(jQue40.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue40ActionPerformed
 
     private void jQue41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue41ActionPerformed
-        // TODO add your handling code here:
+        if(jQue41.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue41ActionPerformed
 
     private void jQue42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue42ActionPerformed
-        // TODO add your handling code here:
+        if(jQue42.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue42ActionPerformed
 
     private void jQue43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue43ActionPerformed
-        // TODO add your handling code here:
+        if(jQue43.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue43ActionPerformed
 
     private void jQue44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue44ActionPerformed
-        // TODO add your handling code here:
+        if(jQue44.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue44ActionPerformed
 
     private void jQue45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue45ActionPerformed
-        // TODO add your handling code here:
+        if(jQue45.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue45ActionPerformed
 
     private void jQue48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue48ActionPerformed
-        // TODO add your handling code here:
+        if(jQue48.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue48ActionPerformed
 
     private void jQue47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue47ActionPerformed
-        // TODO add your handling code here:
+        if(jQue47.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue47ActionPerformed
 
     private void jQue46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQue46ActionPerformed
-        // TODO add your handling code here:
+        if(jQue46.isSelected()){
+            HollandInterpreter.answer[0] = 1;
+            //JOptionPane.showMessageDialog ( null, HollandInterpreter.answer[0] );
+        }
     }//GEN-LAST:event_jQue46ActionPerformed
 
     private void jNext_X1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jNext_X1ActionPerformed
         dispose();
         X2_dssweakness x = new X2_dssweakness();
         x.setVisible(true);
-        dsshome.result = dsshome.holland.interprete(dsshome.holland.countAns(HollandInterpreter.answer));
-        JOptionPane.showMessageDialog ( null, dsshome.result );
     }//GEN-LAST:event_jNext_X1ActionPerformed
 
     private void jContact_X1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jContact_X1ActionPerformed
@@ -837,7 +971,6 @@ public class X1_dssquestion extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -866,12 +999,8 @@ public class X1_dssquestion extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new X1_dssquestion().setVisible(true);
-                
             }
         });
-       
-        //result = holland.interprete(holland.countAns(HollandInterpreter.answer));
-        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
