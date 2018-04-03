@@ -3,16 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/wulan/Documents/DSSProject/GUI_DSS_1/src/IMG/img_homepage5.jpg</file>
-            <file>file:/C:/Users/wulan/Documents/DSSProject/GUI_DSS_1/src/X2_dssweakness.java</file>
-            <file>file:/C:/Users/wulan/Documents/DSSProject/GUI_DSS_1/src/X5_dssinsight1.java</file>
-            <file>file:/C:/Users/wulan/Documents/DSSProject/GUI_DSS_1/src/X7_dssinsight3.java</file>
-            <file>file:/C:/Users/wulan/Documents/DSSProject/GUI_DSS_1/src/X8_dssinsight4.java</file>
-            <file>file:/C:/Users/wulan/Documents/DSSProject/GUI_DSS_1/src/X1_dssquestion.java</file>
-            <file>file:/C:/Users/wulan/Documents/DSSProject/GUI_DSS_1/src/dsshome.java</file>
-            <file>file:/C:/Users/wulan/Documents/DSSProject/GUI_DSS_1/src/X3_dssgrade.java</file>
-            <file>file:/C:/Users/wulan/Documents/DSSProject/GUI_DSS_1/src/X4_dssresult.java</file>
-            <file>file:/C:/Users/wulan/Documents/DSSProject/GUI_DSS_1/src/X6_dssinsight2.java</file>
+            <file>file:/Users/Natnaree/DSSProject2/GUI_DSS_1/src/dsshome.java</file>
+            <file>file:/Users/Natnaree/DSSProject2/GUI_DSS_1/src/Data.java</file>
+            <file>file:/Users/Natnaree/DSSProject2/GUI_DSS_1/src/WeaknessScore.java</file>
+            <file>file:/Users/Natnaree/DSSProject2/GUI_DSS_1/src/X2_dssweakness.java</file>
+            <file>file:/Users/Natnaree/DSSProject2/GUI_DSS_1/src/HollandInterpreter.java</file>
+            <file>file:/Users/Natnaree/DSSProject2/GUI_DSS_1/src/X1_dssquestion.java</file>
         </group>
     </open-files>
 </project-private>

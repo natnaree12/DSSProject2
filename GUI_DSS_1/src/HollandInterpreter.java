@@ -12,6 +12,8 @@ public class HollandInterpreter {
     static int answer[] = new int [48];
     int[] codeKey = new int [48];
     int[] code = new int [6];
+    String result;
+    String[] departmentFiltered;
     
     public HollandInterpreter(){
         for(int i = 0; i < 48; i++){
@@ -24,12 +26,7 @@ public class HollandInterpreter {
                 case 4: codeKey[i] = 4; break;
                 case 5: codeKey[i] = 5; break;
             }
-//            if(i%6 == 0) codeKey[i] = 0;
-//            else if(i%6 == 1) codeKey[i] = 1;
-//            else if(i%6 == 2) codeKey[i] = 2;
-//            else if(i%6 == 3) codeKey[i] = 3;
-//            else if(i%6 == 4) codeKey[i] = 4;
-//            else codeKey[i] = 5;
+            //System.out.println("codeKey[" + i + "] = " + codeKey[i]);
         }
     }
     
@@ -42,25 +39,38 @@ public class HollandInterpreter {
         return code;
     }
     
-    public char interprete(int[] code){
+    public void interprete(int[] code){
         this.code = code;
         int max = code[0];
         int maxCode = 0;
-        char result = 'X';
         for(int i = 1; i < 6; i++){
             if(code[i] > max){
                 max = code[i];
                 maxCode = i;
             }
         }
-        if(maxCode == 0) result = 'R';
-        else if(maxCode == 1) result = 'I';
-        else if(maxCode == 2) result = 'A';
-        else if(maxCode == 3) result = 'S';
-        else if(maxCode == 4) result = 'E';
-        else if(maxCode == 5) result = 'c';
+        if(maxCode == 0) result = "Realistic";
+        else if(maxCode == 1) result = "Investigative";
+        else if(maxCode == 2) result = "Artistic";
+        else if(maxCode == 3) result = "Social";
+        else if(maxCode == 4) result = "Enterprising";
+        else if(maxCode == 5) result = "Conventional";
         
-        return result;
+        this.result = result;
+    }
+    
+    public String[] filter(){
+        String departmentFiltered[] = new String [32];
+        int count = 0;
+        for(int i = 0; i < 125; i++){
+            if(dsshome.data.personalType[i].equalsIgnoreCase(result)){
+                departmentFiltered[count++] = dsshome.data.department[i];
+            }
+        }
+        
+        this.departmentFiltered = departmentFiltered;
+        
+        return departmentFiltered;
     }
    
 }

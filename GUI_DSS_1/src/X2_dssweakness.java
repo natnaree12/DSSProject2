@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -65,6 +68,11 @@ public class X2_dssweakness extends javax.swing.JFrame {
         jWeak2.setBackground(new java.awt.Color(255, 255, 255));
         jWeak2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jWeak2.setText("English");
+        jWeak2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jWeak2ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jWeak2);
         jWeak2.setBounds(420, 240, 130, 27);
 
@@ -224,9 +232,11 @@ public class X2_dssweakness extends javax.swing.JFrame {
     }//GEN-LAST:event_jPrevious_X2ActionPerformed
 
     private void jNext_X2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jNext_X2ActionPerformed
-    dispose();
+        dispose();
         X3_dssgrade x = new X3_dssgrade();
         x.setVisible(true);        // TODO add your handling code here:
+        String departmentMin = dsshome.score.sort(dsshome.holland.departmentFiltered);
+        JOptionPane.showMessageDialog ( null, departmentMin);
     }//GEN-LAST:event_jNext_X2ActionPerformed
 
     private void jHome_X1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jHome_X1ActionPerformed
@@ -251,6 +261,13 @@ public class X2_dssweakness extends javax.swing.JFrame {
             WeaknessScore.subjectWeak[0] = 1;
         }
     }//GEN-LAST:event_jWeak1ActionPerformed
+
+    private void jWeak2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jWeak2ActionPerformed
+        // TODO add your handling code here:
+        if(jWeak2.isSelected()){
+            WeaknessScore.subjectWeak[1] = 1;
+        }
+    }//GEN-LAST:event_jWeak2ActionPerformed
 
     /**
      * @param args the command line arguments

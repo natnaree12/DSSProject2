@@ -18,12 +18,10 @@ public class dsshome extends javax.swing.JFrame {
      * Creates new form dsshome
      */
     
-    static HollandInterpreter holland = new HollandInterpreter();
-    static char result = 'X';
-    
-    WeaknessScore score = new WeaknessScore();
-    
-    
+    static HollandInterpreter holland = new HollandInterpreter();    
+    static Data data = new Data();
+    static WeaknessScore score = new WeaknessScore();
+ 
     public dsshome() {
         initComponents();
     }
