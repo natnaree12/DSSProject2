@@ -50,11 +50,13 @@ public class Data {
                 faculty[i] = career[2];
                 program[i] = career[3];
                 totalExpense[i] = Integer.parseInt(career[4]);
-                english[i] = Integer.parseInt(career[5]);
-                physics[i] = Integer.parseInt(career[6]);
-                chemistry[i] = Integer.parseInt(career[7]);
-                biology[i] = Integer.parseInt(career[8]);
-                //System.out.println(personalType[i] + " " + department[i]);
+                math[i] = Integer.parseInt(career[5]);
+                english[i] = Integer.parseInt(career[6]);
+                physics[i] = Integer.parseInt(career[7]);
+                chemistry[i] = Integer.parseInt(career[8]);
+                biology[i] = Integer.parseInt(career[9]);
+                System.out.println(personalType[i] + " " + department[i] + " " + math[i] + " " + english[i] +
+                        " " + physics[i] + " " + chemistry[i] + " " + biology[i]);
                 
                 i++;
             }

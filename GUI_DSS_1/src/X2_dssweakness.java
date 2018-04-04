@@ -215,14 +215,26 @@ public class X2_dssweakness extends javax.swing.JFrame {
 
     private void jWeak4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jWeak4ActionPerformed
         // TODO add your handling code here:
+        if(jWeak4.isSelected()){
+            WeaknessScore.subjectWeak[3] = 1;
+            //JOptionPane.showMessageDialog ( null, WeaknessScore.subjectWeak[3]);
+        }
     }//GEN-LAST:event_jWeak4ActionPerformed
 
     private void jWeak3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jWeak3ActionPerformed
         // TODO add your handling code here:
+        if(jWeak3.isSelected()){
+            WeaknessScore.subjectWeak[2] = 1;
+            //JOptionPane.showMessageDialog ( null, WeaknessScore.subjectWeak[2]);
+        }
     }//GEN-LAST:event_jWeak3ActionPerformed
 
     private void jWeak5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jWeak5ActionPerformed
         // TODO add your handling code here:
+        if(jWeak5.isSelected()){
+            WeaknessScore.subjectWeak[4] = 1;
+            //JOptionPane.showMessageDialog ( null, WeaknessScore.subjectWeak[4]);
+        }
     }//GEN-LAST:event_jWeak5ActionPerformed
 
     private void jPrevious_X2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPrevious_X2ActionPerformed
@@ -235,8 +247,13 @@ public class X2_dssweakness extends javax.swing.JFrame {
         dispose();
         X3_dssgrade x = new X3_dssgrade();
         x.setVisible(true);        // TODO add your handling code here:
-        String departmentMin = dsshome.score.sort(dsshome.holland.departmentFiltered);
-        JOptionPane.showMessageDialog ( null, departmentMin);
+        int[] departmentSorted = dsshome.score.sort(dsshome.holland.departmentFiltered);
+        System.out.println("Sorting...");
+        for(int i = 0; i < departmentSorted.length; i++){
+            System.out.println(dsshome.data.department[departmentSorted[i]] + " " + dsshome.score.scoreWeak[i]);
+        }
+        JOptionPane.showMessageDialog ( null, dsshome.data.department[departmentSorted[0]] + "\n" +
+                dsshome.data.department[departmentSorted[1]] + "\n" + dsshome.data.department[departmentSorted[2]]);
     }//GEN-LAST:event_jNext_X2ActionPerformed
 
     private void jHome_X1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jHome_X1ActionPerformed
@@ -259,6 +276,7 @@ public class X2_dssweakness extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(jWeak1.isSelected()){
             WeaknessScore.subjectWeak[0] = 1;
+            JOptionPane.showMessageDialog ( null, WeaknessScore.subjectWeak[0]);
         }
     }//GEN-LAST:event_jWeak1ActionPerformed
 

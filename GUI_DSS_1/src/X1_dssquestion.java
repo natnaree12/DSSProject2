@@ -970,13 +970,13 @@ public class X1_dssquestion extends javax.swing.JFrame {
             System.out.println("code[" + i + "] = " + dsshome.holland.code[i]);
         }
         
-        String[] departmentFil = dsshome.holland.filter();
+        int[] departmentFil = dsshome.holland.filter();
         
         JOptionPane.showMessageDialog ( null, dsshome.holland.result);
         
         System.out.println("Filtering...");
         for(int i = 0; i < 32; i++){
-            System.out.println(departmentFil[i]);
+            System.out.println(dsshome.data.department[departmentFil[i]]);
         }
         
     }//GEN-LAST:event_jNext_X1ActionPerformed

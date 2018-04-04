@@ -13,7 +13,7 @@ public class HollandInterpreter {
     int[] codeKey = new int [48];
     int[] code = new int [6];
     String result;
-    String[] departmentFiltered;
+    int[] departmentFiltered;
     
     public HollandInterpreter(){
         for(int i = 0; i < 48; i++){
@@ -59,12 +59,12 @@ public class HollandInterpreter {
         this.result = result;
     }
     
-    public String[] filter(){
-        String departmentFiltered[] = new String [32];
+    public int[] filter(){ //return index that are match the the result type
+        int departmentFiltered[] = new int [32];
         int count = 0;
         for(int i = 0; i < 125; i++){
             if(dsshome.data.personalType[i].equalsIgnoreCase(result)){
-                departmentFiltered[count++] = dsshome.data.department[i];
+                departmentFiltered[count++] = i;
             }
         }
         
