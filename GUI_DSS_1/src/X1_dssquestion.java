@@ -1,4 +1,5 @@
 
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 /*
@@ -960,8 +961,11 @@ public class X1_dssquestion extends javax.swing.JFrame {
 
     private void jNext_X1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jNext_X1ActionPerformed
         dispose();
-        X2_dssweakness x = new X2_dssweakness();
+        //X3_dssweakness x = new X3_dssweakness();
+        X2_dssgrade x = new X2_dssgrade();
         x.setVisible(true);
+        
+        //code for filtering the department based on the holland personality type
         for(int i = 0; i < 48; i++){
             System.out.println("answer[" + i + "] = " + dsshome.holland.answer[i]);
         }
@@ -970,14 +974,17 @@ public class X1_dssquestion extends javax.swing.JFrame {
             System.out.println("code[" + i + "] = " + dsshome.holland.code[i]);
         }
         
+        //------------just print out to check the result------------------------
+        
         int[] departmentFil = dsshome.holland.filter();
         
-        JOptionPane.showMessageDialog ( null, dsshome.holland.result);
+        JOptionPane.showMessageDialog (null, dsshome.holland.result);
         
         System.out.println("Filtering...");
-        for(int i = 0; i < 32; i++){
+        for(int i = 0; i < departmentFil.length; i++){
             System.out.println(dsshome.data.department[departmentFil[i]]);
         }
+        
         
     }//GEN-LAST:event_jNext_X1ActionPerformed
 

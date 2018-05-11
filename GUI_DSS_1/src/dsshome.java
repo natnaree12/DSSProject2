@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  *
  * @author wulan
  */
-public class dsshome extends javax.swing.JFrame {
+public class dsshome extends javax.swing.JFrame{
 
     /**
      * Creates new form dsshome
@@ -21,6 +21,7 @@ public class dsshome extends javax.swing.JFrame {
     static HollandInterpreter holland = new HollandInterpreter();    
     static Data data = new Data();
     static WeaknessScore score = new WeaknessScore();
+    static ProgramFilter programFilter = new ProgramFilter();
  
     public dsshome() {
         initComponents();

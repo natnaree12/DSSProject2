@@ -1,3 +1,9 @@
+
+import javax.swing.JTable;
+import javax.swing.JTextField;
+import javax.swing.table.DefaultTableModel;
+
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -15,6 +21,14 @@ public class X4_dssresult extends javax.swing.JFrame {
      */
     public X4_dssresult() {
         initComponents();
+        
+//        Object rank1 = new String(dsshome.data.department[dsshome.score.departmentSorted[0]]);
+//        Object rank2 = new String(dsshome.data.department[dsshome.score.departmentSorted[1]]);
+//        Object rank3 = new String(dsshome.data.department[dsshome.score.departmentSorted[2]]);
+//        DefaultTableModel model = (DefaultTableModel) X4_dssresult.jTable1.getModel();
+//                model.addRow(new Object[] {new Integer(1), rank1, dsshome.data.faculty[dsshome.score.departmentSorted[0]], dsshome.data.program[dsshome.score.departmentSorted[0]], dsshome.data.totalExpense[dsshome.score.departmentSorted[0]], "Insight"});
+//                model.addRow(new Object[] {new Integer(2), rank2, dsshome.data.faculty[dsshome.score.departmentSorted[1]], dsshome.data.program[dsshome.score.departmentSorted[1]], dsshome.data.totalExpense[dsshome.score.departmentSorted[1]], "Insight"});
+//                model.addRow(new Object[] {new Integer(3) ,rank3, dsshome.data.faculty[dsshome.score.departmentSorted[2]], dsshome.data.program[dsshome.score.departmentSorted[2]], dsshome.data.totalExpense[dsshome.score.departmentSorted[2]], "Insight"});
     }
 
     /**
@@ -28,36 +42,49 @@ public class X4_dssresult extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        recommend = new javax.swing.JTable();
         jHome_X3 = new javax.swing.JButton();
         jHelp_X3 = new javax.swing.JButton();
         jContact_X3 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        discourage = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setLayout(null);
 
-        jTable1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        recommend.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        recommend.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
+
             },
             new String [] {
                 "No.", "Department", "Faculty", "Program", "Total Expense"
             }
-        ));
-        jScrollPane1.setViewportView(jTable1);
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        recommend.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_ALL_COLUMNS);
+        jScrollPane1.setViewportView(recommend);
 
         jPanel1.add(jScrollPane1);
-        jScrollPane1.setBounds(150, 230, 650, 120);
+        jScrollPane1.setBounds(50, 300, 750, 80);
 
         jHome_X3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/house-black-building-shape.png"))); // NOI18N
         jHome_X3.addActionListener(new java.awt.event.ActionListener() {
@@ -66,13 +93,13 @@ public class X4_dssresult extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jHome_X3);
-        jHome_X3.setBounds(900, 10, 40, 25);
+        jHome_X3.setBounds(900, 10, 40, 28);
 
         jHelp_X3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jHelp_X3.setForeground(new java.awt.Color(255, 153, 0));
         jHelp_X3.setText("Help");
         jPanel1.add(jHelp_X3);
-        jHelp_X3.setBounds(240, 10, 80, 23);
+        jHelp_X3.setBounds(240, 10, 80, 29);
 
         jContact_X3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jContact_X3.setForeground(new java.awt.Color(255, 153, 0));
@@ -83,25 +110,69 @@ public class X4_dssresult extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jContact_X3);
-        jContact_X3.setBounds(160, 10, 80, 23);
+        jContact_X3.setBounds(160, 10, 80, 29);
 
-        jButton1.setText("Insight");
+        jButton1.setText("Admission graph");
         jPanel1.add(jButton1);
-        jButton1.setBounds(810, 280, 65, 23);
+        jButton1.setBounds(800, 330, 140, 29);
 
-        jButton2.setText("Insight");
+        jButton2.setText("Admission graph");
         jPanel1.add(jButton2);
-        jButton2.setBounds(810, 250, 65, 23);
+        jButton2.setBounds(800, 310, 140, 29);
 
-        jButton3.setText("Insight");
-        jPanel1.add(jButton3);
-        jButton3.setBounds(810, 340, 65, 23);
+        jLabel2.setText("Your name is");
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(50, 220, 82, 16);
 
-        jButton4.setText("Insight");
+        jLabel3.setText(dsshome.jName.getText());
+        jPanel1.add(jLabel3);
+        jLabel3.setBounds(220, 220, 150, 16);
+
+        jButton4.setText("Admission graph");
         jPanel1.add(jButton4);
-        jButton4.setBounds(810, 310, 65, 23);
+        jButton4.setBounds(800, 350, 140, 29);
+
+        jLabel5.setText("The recommend departments:");
+        jPanel1.add(jLabel5);
+        jLabel5.setBounds(50, 280, 200, 16);
+
+        jLabel6.setText("Your personality type is");
+        jPanel1.add(jLabel6);
+        jLabel6.setBounds(50, 240, 149, 16);
+
+        jLabel7.setText(dsshome.holland.result);
+        jPanel1.add(jLabel7);
+        jLabel7.setBounds(220, 240, 150, 16);
+
+        jLabel8.setText("The discourage departments:");
+        jPanel1.add(jLabel8);
+        jLabel8.setBounds(50, 390, 200, 16);
+
+        discourage.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        discourage.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "No.", "Department", "Faculty", "Program", "Total Expense"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        discourage.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_ALL_COLUMNS);
+        jScrollPane2.setViewportView(discourage);
+
+        jPanel1.add(jScrollPane2);
+        jScrollPane2.setBounds(50, 410, 750, 80);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/img_dssresult1.jpg"))); // NOI18N
+        jLabel1.setText("Something");
         jPanel1.add(jLabel1);
         jLabel1.setBounds(0, -10, 960, 550);
 
@@ -153,26 +224,36 @@ public class X4_dssresult extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(X4_dssresult.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        
+        //personality = new JTextField(dsshome.holland.result);
 
-        /* Create and display the form */
+        
+        /* Create and display the form */        
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new X4_dssresult().setVisible(true);
+                new X4_dssresult().setVisible(true);                
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public static javax.swing.JTable discourage;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jContact_X3;
     private javax.swing.JButton jHelp_X3;
     private javax.swing.JButton jHome_X3;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JScrollPane jScrollPane2;
+    public static javax.swing.JTable recommend;
     // End of variables declaration//GEN-END:variables
 }

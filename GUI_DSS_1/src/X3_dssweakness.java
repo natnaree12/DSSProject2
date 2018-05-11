@@ -1,22 +1,24 @@
 
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
 import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author wulan
  */
-public class X2_dssweakness extends javax.swing.JFrame {
+public class X3_dssweakness extends javax.swing.JFrame {
 
     /**
      * Creates new form X2_dssweakness
      */
-    public X2_dssweakness() {
+    public X3_dssweakness() {
         initComponents();
     }
 
@@ -215,7 +217,7 @@ public class X2_dssweakness extends javax.swing.JFrame {
 
     private void jWeak4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jWeak4ActionPerformed
         // TODO add your handling code here:
-        if(jWeak4.isSelected()){
+        if (jWeak4.isSelected()) {
             WeaknessScore.subjectWeak[3] = 1;
             //JOptionPane.showMessageDialog ( null, WeaknessScore.subjectWeak[3]);
         }
@@ -223,7 +225,7 @@ public class X2_dssweakness extends javax.swing.JFrame {
 
     private void jWeak3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jWeak3ActionPerformed
         // TODO add your handling code here:
-        if(jWeak3.isSelected()){
+        if (jWeak3.isSelected()) {
             WeaknessScore.subjectWeak[2] = 1;
             //JOptionPane.showMessageDialog ( null, WeaknessScore.subjectWeak[2]);
         }
@@ -231,7 +233,7 @@ public class X2_dssweakness extends javax.swing.JFrame {
 
     private void jWeak5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jWeak5ActionPerformed
         // TODO add your handling code here:
-        if(jWeak5.isSelected()){
+        if (jWeak5.isSelected()) {
             WeaknessScore.subjectWeak[4] = 1;
             //JOptionPane.showMessageDialog ( null, WeaknessScore.subjectWeak[4]);
         }
@@ -245,15 +247,38 @@ public class X2_dssweakness extends javax.swing.JFrame {
 
     private void jNext_X2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jNext_X2ActionPerformed
         dispose();
-        X3_dssgrade x = new X3_dssgrade();
+        X4_dssresult x = new X4_dssresult();
         x.setVisible(true);        // TODO add your handling code here:
-        int[] departmentSorted = dsshome.score.sort(dsshome.holland.departmentFiltered);
+        int[] departmentSorted = dsshome.score.sort(dsshome.programFilter.departmentProgramFilteredFinal);
         System.out.println("Sorting...");
-        for(int i = 0; i < departmentSorted.length; i++){
+        for (int i = 0; i < departmentSorted.length; i++) {
             System.out.println(dsshome.data.department[departmentSorted[i]] + " " + dsshome.score.scoreWeak[i]);
         }
-        JOptionPane.showMessageDialog ( null, dsshome.data.department[departmentSorted[0]] + "\n" +
-                dsshome.data.department[departmentSorted[1]] + "\n" + dsshome.data.department[departmentSorted[2]]);
+        
+        int[] departmentSortedDesc = dsshome.score.sortDesc(dsshome.programFilter.departmentProgramFilteredFinal);
+        System.out.println("Sorting...");
+        for (int i = 0; i < departmentSorted.length; i++) {
+            System.out.println(dsshome.data.department[departmentSortedDesc[i]] + " " + dsshome.score.scoreWeak[i]);
+        }
+        //JOptionPane.showMessageDialog(null, dsshome.data.department[departmentSorted[0]] + "\n"
+        //        + dsshome.data.department[departmentSorted[1]] + "\n" + dsshome.data.department[departmentSorted[2]]);
+        
+        Object rank1 = new String(dsshome.data.department[dsshome.score.departmentSorted[0]]);
+        Object rank2 = new String(dsshome.data.department[dsshome.score.departmentSorted[1]]);
+        Object rank3 = new String(dsshome.data.department[dsshome.score.departmentSorted[2]]);
+        DefaultTableModel model = (DefaultTableModel) X4_dssresult.recommend.getModel();
+                model.addRow(new Object[] {new Integer(1), rank1, dsshome.data.faculty[dsshome.score.departmentSorted[0]], dsshome.data.program[dsshome.score.departmentSorted[0]], dsshome.data.totalExpense[dsshome.score.departmentSorted[0]]});
+                model.addRow(new Object[] {new Integer(2), rank2, dsshome.data.faculty[dsshome.score.departmentSorted[1]], dsshome.data.program[dsshome.score.departmentSorted[1]], dsshome.data.totalExpense[dsshome.score.departmentSorted[1]]});
+                model.addRow(new Object[] {new Integer(3) ,rank3, dsshome.data.faculty[dsshome.score.departmentSorted[2]], dsshome.data.program[dsshome.score.departmentSorted[2]], dsshome.data.totalExpense[dsshome.score.departmentSorted[2]]});
+        
+        DefaultTableModel model2 = (DefaultTableModel) X4_dssresult.discourage.getModel();
+        
+        model2.addRow(new Object[] {new Integer(1), new String(dsshome.data.department[dsshome.score.departmentSortedDesc[0]]), dsshome.data.faculty[dsshome.score.departmentSortedDesc[0]], dsshome.data.program[dsshome.score.departmentSortedDesc[0]], dsshome.data.totalExpense[dsshome.score.departmentSortedDesc[0]]});
+                
+                
+                
+        //X4_dssresult.recommend.getColumn("Admission").setCellRenderer(new ButtonRenderer());
+        //X4_dssresult.recommend.getColumn("Button").setCellEditor(new ButtonEditor(new JCheckBox()));
     }//GEN-LAST:event_jNext_X2ActionPerformed
 
     private void jHome_X1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jHome_X1ActionPerformed
@@ -266,6 +291,7 @@ public class X2_dssweakness extends javax.swing.JFrame {
 
     private void jNext_X3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jNext_X3ActionPerformed
         // TODO add your handling code here:
+        
     }//GEN-LAST:event_jNext_X3ActionPerformed
 
     private void jHome_X2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jHome_X2ActionPerformed
@@ -274,15 +300,15 @@ public class X2_dssweakness extends javax.swing.JFrame {
 
     private void jWeak1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jWeak1ActionPerformed
         // TODO add your handling code here:
-        if(jWeak1.isSelected()){
+        if (jWeak1.isSelected()) {
             WeaknessScore.subjectWeak[0] = 1;
-            JOptionPane.showMessageDialog ( null, WeaknessScore.subjectWeak[0]);
+            //JOptionPane.showMessageDialog ( null, WeaknessScore.subjectWeak[0]);
         }
     }//GEN-LAST:event_jWeak1ActionPerformed
 
     private void jWeak2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jWeak2ActionPerformed
         // TODO add your handling code here:
-        if(jWeak2.isSelected()){
+        if (jWeak2.isSelected()) {
             WeaknessScore.subjectWeak[1] = 1;
         }
     }//GEN-LAST:event_jWeak2ActionPerformed
@@ -304,20 +330,21 @@ public class X2_dssweakness extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(X2_dssweakness.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(X3_dssweakness.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(X2_dssweakness.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(X3_dssweakness.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(X2_dssweakness.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(X3_dssweakness.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(X2_dssweakness.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(X3_dssweakness.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new X2_dssweakness().setVisible(true);
+                new X3_dssweakness().setVisible(true);
             }
         });
     }

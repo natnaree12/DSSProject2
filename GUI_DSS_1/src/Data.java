@@ -1,8 +1,11 @@
 
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -26,10 +29,16 @@ public class Data {
     int physics[] = new int [125];
     int chemistry[] = new int [125];
     int biology[] = new int [125];
+    int sciMath[] = new int [125];
+    int mathLang[] = new int [125];
+    int lang[] = new int [125];
     
     
     public Data(){
-        String csvFile = "/Users/Natnaree/DSSProject2/CareerMappingFull.csv";
+        String csvFile = "src/CareerMappingFull.csv";
+        File f = new File(csvFile);
+        //FileReader fr = new FileReader(f);
+        //FileInputStream input = new FileInputStream(csvFile);
         BufferedReader br = null;
         String line = "";
         String cvsSplitBy = ",";
@@ -38,7 +47,7 @@ public class Data {
         //File file = new File(path);
         
         try {
-            br = new BufferedReader(new FileReader(csvFile));
+            br = new BufferedReader(new FileReader(f));
             int i = 0;
   
             while ((line = br.readLine()) != null) {
@@ -55,8 +64,12 @@ public class Data {
                 physics[i] = Integer.parseInt(career[7]);
                 chemistry[i] = Integer.parseInt(career[8]);
                 biology[i] = Integer.parseInt(career[9]);
+                sciMath[i] = Integer.parseInt(career[10]);
+                mathLang[i] = Integer.parseInt(career[11]);
+                lang[i] = Integer.parseInt(career[12]);
                 System.out.println(personalType[i] + " " + department[i] + " " + math[i] + " " + english[i] +
-                        " " + physics[i] + " " + chemistry[i] + " " + biology[i]);
+                        " " + physics[i] + " " + chemistry[i] + " " + biology[i] + " " + sciMath[i] + " " + mathLang[i] +
+                        " " + lang[i]);
                 
                 i++;
             }

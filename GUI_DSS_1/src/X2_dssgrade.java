@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -8,12 +11,12 @@
  *
  * @author wulan
  */
-public class X3_dssgrade extends javax.swing.JFrame {
+public class X2_dssgrade extends javax.swing.JFrame {
 
     /**
      * Creates new form X3_dssgrade
      */
-    public X3_dssgrade() {
+    public X2_dssgrade() {
         initComponents();
     }
 
@@ -63,12 +66,17 @@ public class X3_dssgrade extends javax.swing.JFrame {
         jLabel4.setBounds(240, 340, 150, 22);
 
         jGradeOption1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Science - Mathematics", "Mathematics - Art", "Languages - Art", " " }));
+        jGradeOption1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jGradeOption1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jGradeOption1);
-        jGradeOption1.setBounds(240, 370, 140, 20);
+        jGradeOption1.setBounds(240, 370, 140, 27);
 
         jGradeOption.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Below grade 10", "Grade 10", "Grade 11", "Grade 12", " " }));
         jPanel1.add(jGradeOption);
-        jGradeOption.setBounds(240, 250, 140, 20);
+        jGradeOption.setBounds(240, 250, 140, 27);
 
         jTextField1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jPanel1.add(jTextField1);
@@ -81,7 +89,7 @@ public class X3_dssgrade extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jHome_X3);
-        jHome_X3.setBounds(900, 20, 40, 25);
+        jHome_X3.setBounds(900, 20, 40, 28);
 
         jNext_X3.setBackground(new java.awt.Color(102, 153, 255));
         jNext_X3.setForeground(new java.awt.Color(255, 255, 255));
@@ -92,7 +100,7 @@ public class X3_dssgrade extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jNext_X3);
-        jNext_X3.setBounds(490, 480, 80, 23);
+        jNext_X3.setBounds(490, 480, 80, 29);
 
         jPrevious_X3.setBackground(new java.awt.Color(102, 153, 255));
         jPrevious_X3.setForeground(new java.awt.Color(255, 255, 255));
@@ -103,13 +111,13 @@ public class X3_dssgrade extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jPrevious_X3);
-        jPrevious_X3.setBounds(395, 480, 80, 23);
+        jPrevious_X3.setBounds(395, 480, 80, 29);
 
         jHelp_X3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jHelp_X3.setForeground(new java.awt.Color(255, 153, 0));
         jHelp_X3.setText("Help");
         jPanel1.add(jHelp_X3);
-        jHelp_X3.setBounds(240, 20, 80, 23);
+        jHelp_X3.setBounds(240, 20, 80, 29);
 
         jContact_X3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jContact_X3.setForeground(new java.awt.Color(255, 153, 0));
@@ -120,7 +128,7 @@ public class X3_dssgrade extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jContact_X3);
-        jContact_X3.setBounds(160, 20, 80, 23);
+        jContact_X3.setBounds(160, 20, 80, 29);
 
         jBackground_X3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/img_dssgrade1.jpg"))); // NOI18N
         jPanel1.add(jBackground_X3);
@@ -142,14 +150,25 @@ public class X3_dssgrade extends javax.swing.JFrame {
 
     private void jPrevious_X3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPrevious_X3ActionPerformed
         dispose();
-        X2_dssweakness x = new X2_dssweakness();
+        X3_dssweakness x = new X3_dssweakness();
         x.setVisible(true);
     }//GEN-LAST:event_jPrevious_X3ActionPerformed
 
+    //Next button
     private void jNext_X3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jNext_X3ActionPerformed
         dispose();
-        X4_dssresult x = new X4_dssresult();
+        X3_dssweakness x = new X3_dssweakness();
         x.setVisible(true);
+        
+        //just print out to check the result
+        
+        int[] filter = dsshome.programFilter.filter(dsshome.holland.filter());
+        
+        System.out.println("Program filtering...");
+        for(int i = 0; i < filter.length; i++){
+            System.out.println(dsshome.data.department[filter[i]] + " " + dsshome.data.sciMath[filter[i]] +
+                    " " + dsshome.data.mathLang[filter[i]] + " " + dsshome.data.lang[filter[i]]);
+        }
     }//GEN-LAST:event_jNext_X3ActionPerformed
 
     private void jHome_X3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jHome_X3ActionPerformed
@@ -159,6 +178,12 @@ public class X3_dssgrade extends javax.swing.JFrame {
     private void jContact_X3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jContact_X3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jContact_X3ActionPerformed
+
+    private void jGradeOption1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jGradeOption1ActionPerformed
+        // TODO add your handling code here:
+        ProgramFilter.program = (String) jGradeOption1.getSelectedItem();
+        JOptionPane.showMessageDialog ( null, ProgramFilter.program);
+    }//GEN-LAST:event_jGradeOption1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -177,20 +202,21 @@ public class X3_dssgrade extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(X3_dssgrade.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(X2_dssgrade.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(X3_dssgrade.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(X2_dssgrade.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(X3_dssgrade.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(X2_dssgrade.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(X3_dssgrade.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(X2_dssgrade.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
        java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new X3_dssgrade().setVisible(true);
+                new X2_dssgrade().setVisible(true);
             }
         });
     }
